@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.contian{
+    width: 70%;
+    display: flex;
+    display: inline-block;
+    margin: 25px;
+    align-items: center;
+}
+.box{
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px black solid;
+    display: inline-block;
+    gap: 10px;
+    background-color: {{color}};
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+    <h1>Welcome!</h1>
+    </div>
+    <div class="main">
+        <div class="contian">
+            {% for x in range(0, number): %}
+                <div class="box">
+                    <h1>Hello</h1>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
